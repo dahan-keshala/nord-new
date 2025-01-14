@@ -3080,17 +3080,18 @@ Google map
   background-position: center;
   height: 80vh; /* Full viewport height */
   color: white; /* Ensure text is visible */
-  padding: 20px;
+  padding: 40px;
 }
 
 .service-page-header .content {
-  max-width: 500px;
+  max-width: 450px;
 }
 
 /* Mobile screens: Move content to the bottom */
-@media (max-width: 1024px) {
+@media (max-width: 560px) {
   .service-page-header {
     background-image: url("../images/port-agency-mobile.png");
+
     justify-content: flex-end; /* Push content to the bottom */
   }
 }
