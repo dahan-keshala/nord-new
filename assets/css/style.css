@@ -3095,3 +3095,88 @@ Google map
     justify-content: flex-end; /* Push content to the bottom */
   }
 }
+
+.logistic-service-page-header {
+  display: flex;
+  flex-direction: column; /* Default: Stack children vertically */
+  justify-content: center; /* Center content by default */
+  align-items: flex-start; /* Align items to the start */
+  background-image: url("../images/logistic-service.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Full viewport height */
+  color: white; /* Ensure text is visible */
+  padding: 40px;
+}
+
+.logistic-service-page-header .content {
+  max-width: 350px;
+}
+
+/* Mobile screens: Move content to the bottom */
+@media (max-width: 560px) {
+  .logistic-service-page-header {
+    background-image: url("../images/logistic-service-mobile.png");
+
+    justify-content: flex-end; /* Push content to the bottom */
+  }
+}
+
+.marine-service-page-header {
+  display: flex;
+  flex-direction: column; /* Default: Stack children vertically */
+  justify-content: center; /* Center content by default */
+
+  background-image: url("../images/marine-service.png");
+  background-size: cover;
+  background-position: center;
+  align-items: flex-end; /* Align items to the start */
+  height: 80vh; /* Full viewport height */
+  color: white; /* Ensure text is visible */
+  padding: 40px;
+}
+
+.marine-service-page-header .content {
+  max-width: 350px;
+}
+
+/* Mobile screens: Move content to the bottom */
+@media (max-width: 560px) {
+  .marine-service-page-header {
+    background-image: url("../images/marine-service.png");
+
+    justify-content: flex-end; /* Push content to the bottom */
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.port-page-header {
+  display: flex;
+  flex-direction: column; /* Default: Stack children vertically */
+  justify-content: center; /* Center content by default */
+  align-items: center; /* Align items to the start */
+  background-image: url("../images/Port.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Full viewport height */
+  color: white; /* Ensure text is visible */
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.port-page-header .content {
+  max-width: 450px;
+}
+
+/* Mobile screens: Move content to the bottom */
+@media (max-width: 560px) {
+  .port-page-header {
+    background-image: url("../images/port-mobile.png");
+
+    margin-bottom: 0px;
+  }
+}
