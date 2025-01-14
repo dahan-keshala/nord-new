@@ -158,6 +158,29 @@ a,
   margin-bottom: 10vh;
 }
 
+.port-agency-hero {
+  height: 80vh;
+}
+
+.port-module-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #111;
+}
+
+.port-module {
+  position: relative;
+  padding: 50px 0;
+}
+
+.new-module-service {
+  position: relative;
+  padding: 50px 0;
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+  background-size: cover;
+}
+
 .examples {
   border-radius: 2px;
   padding: 7px 5px;
@@ -3044,5 +3067,30 @@ Google map
   .works-grid-4 .work-item,
   .works-grid-5 .work-item {
     width: 100%;
+  }
+}
+
+.service-page-header {
+  display: flex;
+  flex-direction: column; /* Default: Stack children vertically */
+  justify-content: center; /* Center content by default */
+  align-items: flex-start; /* Align items to the start */
+  background-image: url("../images/port-agency.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Full viewport height */
+  color: white; /* Ensure text is visible */
+  padding: 20px;
+}
+
+.service-page-header .content {
+  max-width: 500px;
+}
+
+/* Mobile screens: Move content to the bottom */
+@media (max-width: 1024px) {
+  .service-page-header {
+    background-image: url("../images/port-agency-mobile.png");
+    justify-content: flex-end; /* Push content to the bottom */
   }
 }
