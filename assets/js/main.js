@@ -178,8 +178,10 @@ console.log(
       if (navbar.length > 0 && homeSection.length > 0) {
         if (topScroll >= navHeight) {
           navbar.removeClass("navbar-transparent");
+          navbar.addClass("scrolled");
         } else {
           navbar.addClass("navbar-transparent");
+          navbar.removeClass("scrolled");
         }
       }
     }

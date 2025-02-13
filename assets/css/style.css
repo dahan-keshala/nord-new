@@ -9,7 +9,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 14px/1.8 "Open Sans", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
 }
@@ -171,6 +171,17 @@ a,
 .port-module {
   position: relative;
   padding: 50px 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .flex-center {
+    display: block;
+  }
 }
 
 .new-module-service {
@@ -1005,8 +1016,9 @@ blockquote {
 }
 
 .font-serif {
-  font-family: Volkhov, "Times New Roman", sans-serif;
-  font-style: italic;
+  font-family: "Farro", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .large-text {
@@ -1382,6 +1394,11 @@ General Styles - Owlcarousel
 
 .navbar-custom .nav li > a {
   position: relative;
+
+  color: black;
+}
+
+.scrolled .nav li > a {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -2840,6 +2857,7 @@ Google map
     background: transparent;
     padding-bottom: 15px;
     padding-top: 15px;
+    color: white;
   }
   .navbar-custom .dropdown-menu {
     position: absolute;
@@ -2923,9 +2941,14 @@ Google map
     margin-top: 1px;
     margin-bottom: 0;
   }
+
+  .navbar-custom .nav li > a {
+    color: rgba(255, 255, 255, 0.7);
+  }
   .navbar-custom li > a:hover {
     background: rgba(255, 255, 255, 0.1) !important;
   }
+
   .navbar-custom .navbar-nav .open .dropdown-menu .dropdown-header,
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
     padding: 10px 25px;
@@ -3006,10 +3029,16 @@ Google map
   .features-item {
     margin: 0 0 30px;
   }
-  .alt-features-item {
+  .alt-features-item-center {
     padding-left: 0;
     margin: 0 0 30px;
     text-align: center;
+    font-size: 25px;
+  }
+
+  .alt-features-item-center p {
+    text-align: center;
+    font-size: 25px;
   }
   .alt-features-icon {
     position: static;
