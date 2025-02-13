@@ -3120,7 +3120,7 @@ Google map
 @media (max-width: 560px) {
   .service-page-header {
     background-image: url("../images/port-agency-mobile.png");
-
+    height: 120vh;
     justify-content: flex-end; /* Push content to the bottom */
   }
 }
@@ -3146,7 +3146,7 @@ Google map
 @media (max-width: 560px) {
   .logistic-service-page-header {
     background-image: url("../images/logistic-service-mobile.png");
-
+    height: 120vh;
     justify-content: flex-end; /* Push content to the bottom */
   }
 }
@@ -3172,8 +3172,8 @@ Google map
 /* Mobile screens: Move content to the bottom */
 @media (max-width: 560px) {
   .marine-service-page-header {
-    background-image: url("../images/marine-service.png");
-
+    background-image: url("../images/marine-service-mobile.png");
+    height: 120vh;
     justify-content: flex-end; /* Push content to the bottom */
   }
 }
@@ -3205,7 +3205,7 @@ Google map
 @media (max-width: 560px) {
   .port-page-header {
     background-image: url("../images/port-mobile.png");
-
+    height: 120vh;
     margin-bottom: 0px;
   }
 }
